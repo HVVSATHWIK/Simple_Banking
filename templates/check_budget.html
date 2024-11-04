@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Check Budget</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Budget Status</h2>
+        <ul class="list-group">
+            {% for category, status in budget_status.items() %}
+                <li class="list-group-item">
+                    {{ category }}: Spent: ${{ status.spent }}, Budget: ${{ status.budget }}, Remaining: ${{ status.remaining }}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back to Home</a>
+    </div>
+</body>
+</html>

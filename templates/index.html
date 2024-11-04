@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Banking System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Welcome to the Interactive Banking System</h1>
+        <p>Manage your finances with ease.</p>
+        <a href="/about" class="btn btn-info m-2">About</a>
+        <a href="/admin" class="btn btn-danger m-2">Admin Panel</a>
+        <a href="/create_account" class="btn btn-primary m-2">Create Account</a>
+        <a href="/deposit" class="btn btn-success m-2">Deposit</a>
+        <a href="/withdraw" class="btn btn-warning m-2">Withdraw</a>
+        <a href="/balance" class="btn btn-secondary m-2">Check Balance</a>
+        <a href="/set_budget" class="btn btn-info m-2">Set Budget</a>          <!-- New button for setting budget -->
+        <a href="/check_budget" class="btn btn-secondary m-2">Check Budget</a>  <!-- New button for checking budget -->
+        <a href="/generate_report" class="btn btn-dark m-2">Generate Report</a> <!-- New button for generating report -->
+    </div>
+</body>
+</html>

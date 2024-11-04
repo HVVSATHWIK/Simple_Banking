@@ -1,0 +1,23 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <title>Check Balance</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+      <div class="container mt-5">
+          <h2>Check Balance</h2>
+          <form method="POST">
+              <div class="form-group">
+                  <label for="user_id">User ID</label>
+                  <input type="number" class="form-control" id="user_id" name="user_id" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Check Balance</button>
+          </form>
+          {% if message %}
+          <div class="alert alert-info mt-3">{{ message }}</div>
+          {% endif %}
+          <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+      </div>
+  </body>
+  </html>
